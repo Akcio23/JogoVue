@@ -1,0 +1,142 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif; 
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.personagem {
+    background-color: #333333; 
+    border: 2px solid #73295c; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #73295c; 
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+.barra-vida {
+    height: 32px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.baixa-vida {
+    background-color: red;
+}
+
+.media-vida {
+    background-color: yellow; 
+    color: #424040;
+}
+
+.alta-vida {
+    background-color: green; 
+}
+
+.sprite {
+    height: 160px;
+    background-color: #333333; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.sprite_heroi img {
+    width: 80%;
+    height: auto;
+}
+
+.sprite_vilao img {
+    width: 100%;
+    height: auto;
+}
+
+
+.mensagem {
+    background-color: #333333;
+    color: #f8f8f8;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.historico{
+    color:  #8d2b6e;;
+}
+
+
+
+.critico_zerado{
+    color: red;
+}
+
+.escudo_zerado{
+    color: red;
+
+}
+.pocao{
+    color: red;
+
+}
+
+.defesa_inativa{
+    color: red;
+}
+
+.defesa_ativa{
+    color: green
+}
+
+.botao_invisivel{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.botao_visivel {
+   
+    display: none;
+  
+}
