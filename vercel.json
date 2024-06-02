@@ -1,0 +1,15 @@
+{
+    "version": 2,
+     "builds" :[
+        {
+            "scr": "scr/server.ts",
+            "use": "@vervel/node"
+        }
+     ],
+     "routes": [
+        {
+           "scr": "(.*)",
+           "dest": "scr/server.ts"
+        }
+     ]
+}
